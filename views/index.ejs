@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estudo NodeJS - Chat</title>
+</head>
+<body>
+  <div id="login">
+    <form id="enter">
+      <label for="nickname">Apelido:</label>
+      <input type="text" name="nickname" id="nickname">
+      <input type="submit" name="Entrar" value="Entrar">
+    </form>
+  </div>
+
+  <div id="chat" style="display: none">
+    <div id="messages" style="width: 800px;height: 400px;border: 1px solid #ccc;overflow-y: auto;"></div>
+    <input type="text" name="text" id="text" placeholder="Digite seu texto aqui!">
+    <input type="button" name="send" id="send" value="Enviar">
+  </div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="library/socket.io-client/dist/socket.io.js"></script>
+<script type="text/javascript" src="/library/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/javascript/functions.js"></script>
